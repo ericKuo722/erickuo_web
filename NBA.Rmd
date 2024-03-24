@@ -15,7 +15,7 @@ library(fontawesome)
 library(rnaturalearth)
 library(leaflet)
 library(tidyverse)
-nba <- read.csv("Data/NBA/all_seasons.csv")
+nba <- read.csv("/Users/eric850722/Desktop/Data/NBA/all_seasons.csv")
 ```
 
 <h1 style="text-align:center; font-size: 40px;">NBA data from Kaggle</h1>
