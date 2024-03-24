@@ -1,0 +1,15 @@
+name: "EricKuo Website"
+navbar:
+  title: "Eric Kuo Website"
+  type: inverse
+  left:
+    - text: "Home"
+      href: index.html
+      icon: "fa-solid fa-house"
+    - text: "NBA"
+      href: NBA.html
+      icon: "fa-solid fa-basketball"
+    - text: "More"
+      href: more.html
+
+     

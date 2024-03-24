@@ -1,29 +1,33 @@
 ---
-title: "Untitled"
-output: html_document
-date: "2024-03-22"
+title: ""
+output: 
+  html_document:
+    theme: cosmo
+    css: styles.css
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(fontawesome)
 ```
 
-## R Markdown
+<div class="logo">
+  <img src="logo/profile.jpg" width = "170" height = "170" style="border-radius: 50%;">
+  <br>
+  <p style="text-align:center"><b>Tzu-Yung Kuo<br>
+  Data Scientist<br>
+  <p style="text-align:center">Contact: <a href="https://www.linkedin.com/in/tzuyungkuo/">`r fa("linkedin")`</a>&nbsp;<a href="mailto:e8r5i0c7e2r2@hotmail.com">`r fa("at", fill="#be1919")`</a>&nbsp;<a href="https://github.com/ericKuo722/erickuo_web">`r fa("github",fill="#511f1f")`</a></b></p>
+</div>
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+\
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+<h1 style="text-align:center; font-size: 40px;"> Welcome To My Project Website</h1>
 
-```{r cars}
-summary(cars)
-```
+\
 
-## Including Plots
+<div class="styled-paragraph">
+  <p style="text-align: justify; font-size: 20px;">Hey there! 🚀 Welcome to my little corner of the internet where I geek out about all things data-related! 🤓 Here, you'll find a bunch of cool projects I've whipped up using RStudio.
+  <br>I might also whip up some Python tutorials on data pre-processing and training ML models down the road if I find the time.</p>
+</div>
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

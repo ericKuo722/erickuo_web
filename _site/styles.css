@@ -1,0 +1,56 @@
+.logo {
+  position: fixed;
+  top: 15%;
+  left: 4%;
+}
+
+.styled-paragraph {
+  background-image: linear-gradient(to left, #ffcccc, #ff99cc);
+  padding: 10px; 
+  border-radius: 10px;
+  margin-left: 30px; 
+}
+
+p {
+  font-family: 'Comic Sans MS', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Comic Sans MS', cursive;
+  letter-spacing: 2px;  
+  line-height: 4rem; /* increases, so wrapping headers don't overlap */ 
+
+}
+
+/*----------------NAVBAR ---------------*/
+
+.navbar {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #007bff;
+}
+
+.navbar-default {
+  background-color: #141c25f2;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.active>a, 
+a.dropdown-toggle:hover {
+  background-color: #141c25 !important;
+}
+
+/* Dropdown menu color */
+.navbar-default .dropdown-menu {
+  background-color: #141c25;
+}
+
+
+/* Navbar Links when hovered*/
+.navbar-default .dropdown-menu>.active>a
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav:hover, 
+.navbar-default .navbar-nav>li>a:hover, 
+a.navbar-brand:hover {
+  color: #ffffffab !important;
+  background-color: #141c25;
+}

@@ -1,0 +1,44 @@
+---
+title: ""
+output: 
+  html_document:
+    theme: cosmo
+    css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#install.packages("rnaturalearth")
+#install.packages("rnaturalearthdata")
+
+library(fontawesome)
+library(rnaturalearth)
+library(leaflet)
+library(tidyverse)
+nba <- read.csv("Data/NBA/all_seasons.csv")
+```
+
+<h1 style="text-align:center; font-size: 40px;">NBA data from Kaggle</h1>
+
+## Findings {.tabset .tabset-fade .tabset-pills}
+
+\
+
+### Tables
+
+```{r}
+
+```
+
+### Map
+```{r}
+season_country <- nba %>% select(country, season) %>% group_by(country, season) %>%
+  summarise(count = n())
+
+season_country$season <- str_split_i(season_country$season, "-", 1)
+season_country$season <- as.integer(season_country$season)
+
+world <- ne_countries(scale='medium', returnclass = 'sf')
+USA <- world[world$name == "United States of America",]
+UK <- world[world$name == "United Kingdom",]
+```
